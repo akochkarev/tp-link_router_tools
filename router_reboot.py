@@ -18,7 +18,7 @@ r = requests.get(ROUTER_WEB_INTERFACE_ADDR + PAGE_ADDR,
                     params=form_data)
 
 print('Status code: %s' % r.status_code)
-# print('Content: \n%s\s' % r.content)
+print('Content: \n%s\s' % r.content)
 
 if r.status_code == 200:
     print('OK')
